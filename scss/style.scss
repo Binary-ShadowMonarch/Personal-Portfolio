@@ -27,9 +27,7 @@ $secondary: #a0f669;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
+
 body {
 	font-family: $font-primary;
 	background: $black;
@@ -66,7 +64,7 @@ h1, h2, h3, h4, h5,
 
 
 .ftco-navbar-light {
-	background: transparent!important;
+	// background: transparent!important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -225,13 +223,14 @@ h1, h2, h3, h4, h5,
 		cursor: pointer;
 		padding-right: 0;
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 100px;
 		letter-spacing: .1em;
 		&:hover, &:focus {
 			text-decoration: none;
 			color: $primary;
-			outline: none !important;
+			outline: none ;
 		}
+		
 	}
 	
 	&.scrolled  {
@@ -241,7 +240,8 @@ h1, h2, h3, h4, h5,
 		top: 0;
 		margin-top: -130px;
 		background: $black!important;
-		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+		visibility: visible !important;
+		// box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 		padding: 0 15px;
 		.nav-item {
 			> .nav-link{
@@ -259,8 +259,8 @@ h1, h2, h3, h4, h5,
 			}
 			&.cta {
 				> a {
-					color: $white !important;
-					background: $primary;
+					color: $primary !important;
+					background: $white ;
 					border: none !important;
 					padding-top: .5rem!important;
 					padding-bottom: .5rem !important;
@@ -1189,16 +1189,10 @@ textarea.form-control {
 //ABOUT
 .about-author{
 	@include border-radius(5px);
-	img {
-
-	}
 	.desc{
 		h3{
 			font-size: 24px;
 		}
-	}
-	.bio{
-
 	}
 }
 
@@ -1430,7 +1424,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+//   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1459,11 +1453,6 @@ textarea.form-control {
 .ftco-counter {
 	@include media-breakpoint-down(lg){
 		background-position: center center !important;
-	}
-	.icon{
-		span{
-	
-		}
 	}
 	.block-18{
 		display: block;
@@ -1588,16 +1577,9 @@ textarea.form-control {
 
 .block-6 {
 	margin-bottom: 40px;
-	.icon {
-		span {
-			&:before {
-			}
-		}
-	}
+	
 	.media-body {
-		.heading {
-
-		}
+		
 		p {
 			font-size: 16px;
 		}
@@ -1640,7 +1622,7 @@ textarea.form-control {
 			a{
 				color: lighten($black,10%);
 			}
-			span{}
+	
 		}
 	}
 	.box{
@@ -1685,7 +1667,7 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
+			
 		}
 	}
 	.contact-form{
@@ -1704,8 +1686,6 @@ textarea.form-control {
 		outline: none!important;
 		box-shadow: none!important;
 		font-size: 15px;
-	}
-	#map {
 	}
 
 }
@@ -1988,3 +1968,4 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
